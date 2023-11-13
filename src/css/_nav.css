@@ -2,8 +2,11 @@ nav {
     width: 80%;
     margin: 2rem auto; /* em cima e ebaixo, esquerda e direita */
     display: flex;
-    justify-content: space-around;
-    background-color: #999;
+    justify-content: space-between;
+    max-width: 115rem;
+    position: absolute;
+    left: 50%; /* o elemento começa em 50% da página */
+    transform: translateX(-50%); /* ele volta 50% do espaço, ou seja, centraliza */
 }
 
 h1 {
@@ -31,11 +34,12 @@ h1 {
     text-transform: uppercase;
 }
 
-ul {
-    display: flex;
+nav > ul { /* sinal de maior serve pra todos desse elemento dentro de nav */
+    display: grid;
+    width: 100%;
     list-style: none; /* remover pontos dos tópicos */
-    height: 5rem;
     align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* minimo espaçamento 100pixels, maximo 1fr, é tipo flex wrap que bota pra continuar embaixo */
 }
 
 a {

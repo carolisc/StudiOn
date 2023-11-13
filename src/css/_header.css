@@ -2,7 +2,6 @@ header {
     background: url("../images/header.jpeg"), lightgray 50% / cover no-repeat; /* o 50% é pra posicionar no centro, o cover é pra imagem se adaptar a tela */
     width: 100%; /* preencher largura da tela */
     height: 60rem;
-    margin-top: -9rem;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -20,7 +19,19 @@ header > p{
     color: var(--text-primary);
     font-size: 2rem;
     font-weight: 400;
-    width: 64.5rem;
-    height: 6.7rem;
-    margin-right: 27rem;
+    width: 100%;
+    max-width: 64.5rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 800px) { /* não coloca ; depois do número */
+    header > h2 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header > h2 {
+        font-size: 5rem;
+    }
 }
