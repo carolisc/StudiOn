@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../src/css/home.css">
-    <title>StudiOn</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../src/css/empresa.css">
+    <title>StudiOn - Empresa</title>
 
 </head>
 <body>
@@ -15,62 +14,71 @@
             <h1 class="logo">
                 Studi<span class="accent">on</span> 
                 <span class="subtitle">Eventos</span>
-            </h1> 
+            </h1>
         </a>
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
         <ul class="menu">
             <li>
-                <a href="./empresa.html">Empresa</a>
+                <a href="./empresa.html" class="active">Empresa</a>
             </li>
             <li>
-                <a href="#">Eventos</a>
+                <a href="./eventos.html">Eventos</a>
             </li>
             <li>
-                <a href="#">Galeria</a>
+                <a href="./galeria.html">Galeria</a>
             </li>
             <li>
-                <a href="#">Depoimentos</a>
+                <a href="./depoimentos.html">Depoimentos</a>
             </li>
             <li>
-                <a href="#">Contatos</a>
+                <a href="./contato.html">Contatos</a>
             </li>
         </ul>
     </nav>
 
-    <header>
-        <h2>.empresa</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+    <header style="background-image: url(../src/images/header_empresa.jpeg);">
+        <div class="container container__header">
+            <h2>.empresa</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>    
+        </div>
+        
     </header>
 
     <main>
         <section class="container section1">
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 <small>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     <br><br>
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
                 </small>
             </h4>
-            <div>
+            <div class="lines">
                 <img src="./images/homem.png" alt="Pessoa falando no celular" class="pessoa">
             </div>
         </section>
 
         <section class="section2">
-            <h4>Quem Confia no nosso trabalho</h4>
-            <img src="./images/logos 1.png" alt="Logos de clientes">
+            <h4 class="container">Quem Confia no nosso trabalho</h4>
+            <img class="container" src="./images/logos 1.png" alt="Logos de clientes">
         </section>
 
         <section class="container section3">
-            <img src="./images/Video.png" alt="Homem sentado em um prédio olhando a vista">
+            <img src="./images/Video.png" alt="Homem sentado em um prédio olhando a vista" class="container">
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <h2>
-                Studi<span class="accent">on</span> 
-                <span class="subtitle">Eventos</span>
-            </h2>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h2>
+                    Studi<span class="accent">on</span> 
+                    <span class="subtitle">Eventos</span>
+                </h2>
+            </div>
             <form>
                 <label>Receba News e promoções</label>
                 <input type="email" placeholder="Email" />
@@ -78,7 +86,7 @@
                     <img src="./images/icons/send2.svg" alt="Enviar">
                 </button>
             </form>
-            <ul>
+            <ul class="socials">
                 <li>
                     <a href="#">
                         <img src="./images/icons/facebook.svg" alt="Facebook">
@@ -98,7 +106,7 @@
             </ul>
         </div>
         <hr />
-        <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
     
 </body>
