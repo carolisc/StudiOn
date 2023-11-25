@@ -1,37 +1,70 @@
 header {
-    background: url("../images/header.jpeg"), lightgray 50% / cover no-repeat; /* o 50% é pra posicionar no centro, o cover é pra imagem se adaptar a tela */
-    width: 100%; /* preencher largura da tela */
-    height: 60rem;
+    /*background: url("../images/header.jpeg"), lightgray 50% / cover no-repeat; /* o 50% é pra posicionar no centro, o cover é pra imagem se adaptar a tela */
+    position: relative;
+    z-index: -1;
+}
+
+.header__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header_background__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container__header {
+    height: 100%;
+    min-height: 70vh; /* 70% altura da TELA */
     display: flex;
     flex-direction: column;
     align-items: end;
+    justify-content: center;
 }
 
-header > h2 { /* só pra h2 dentro da tag header */
+.container__header h2 { /* só pra h2 dentro da tag header */
     color: var(--color-secondary);
-    font-size: 12rem;
-    font-weight: 900;
-    margin-top: 18rem;
-    margin-right: 32rem;
+    font-size: 16rem;
+    font-family: var(--font-primary);
+    /* margin-right: 32rem; tá ruim */
 }
 
-header > p{
+.container__header p {
     color: var(--text-primary);
     font-size: 2rem;
     font-weight: 400;
     width: 100%;
-    max-width: 64.5rem;
-    text-align: right;
+    max-width: 60rem;
 }
 
+
+
 @media screen and (max-width: 800px) { /* não coloca ; depois do número */
-    header > h2 {
-        font-size: 8rem;
+    .container__header h2 {
+        font-size: 12rem;
+    }
+
+    .container__header p {
+        font-size: 1.8rem;
+        max-width: 50rem;
     }
 }
 
-@media screen and (max-width: 390px) {
-    header > h2 {
-        font-size: 5rem;
+@media screen and (max-width: 460px) {
+    .container__header h2 {
+        font-size: 6rem;
+    }
+
+    .container__header p {
+        font-size: 1.4rem;
+        max-width: 40rem;
     }
 }

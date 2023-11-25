@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=block');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: --font-secondary;
     transition: linear;
     box-sizing: border-box; /* pra padding sempre ficar interno */
+    text-decoration: none;
 }
 
 html {
@@ -15,5 +16,6 @@ html {
 .container {
     max-width: 115rem;
     width: 100%;
-    margin: 0 auto; /* pra delimitar e deixar bordas */
+    margin: 0 auto; /* pra delimitar e deixar bordas iguais em tudo, mas tirei container do header e da section2 pq tava pegando a imagem e cor de fundo que tem que ficar na tela lateral toda */
+    padding: 0 2rem;
 }
