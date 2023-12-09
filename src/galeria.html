@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../src/css/home.css">
+    <link rel="stylesheet" href="../src/css/galeria.css">
     <title>Galeria | StudiOn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -15,8 +15,12 @@
             <h1 class="logo">
                 Studi<span class="accent">on</span> 
                 <span class="subtitle">Eventos</span>
-            </h1> 
+            </h1>
         </a>
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
         <ul class="menu">
             <li>
                 <a href="./empresa.html">Empresa</a>
@@ -37,46 +41,61 @@
     </nav>
 
     <header>
-        <h2>.home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+        <img 
+            class="header__background" 
+            src="./images/headers/header_contato.jpeg" 
+            alt="macbook"
+            style="filter: brightness(0.2);" 
+        >
+        <div class="container container__header">
+            <h2>.galeria</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>    
+        </div>
+        
     </header>
 
-    <main></main>
+    <main>
+       
 
-    <footer>
-        <div class="container">
-            <h2>
-                Studi<span class="accent">on</span> 
-                <span class="subtitle">Eventos</span>
-            </h2>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h2>
+                    Studi<span class="accent">on</span> 
+                    <span class="subtitle">Eventos</span>
+                </h2>
+            </div>
             <form>
                 <label>Receba News e promoções</label>
                 <input type="email" placeholder="Email" />
                 <button type="submit">
-                    <img src="./images/icons/send2.svg" alt="Enviar">
+                    <img class="icon" src="./images/icons/send2.svg" alt="Enviar">
                 </button>
             </form>
-            <ul>
+            <ul class="socials">
                 <li>
                     <a href="#">
-                        <img src="./images/icons/facebook.svg" alt="Facebook">
+                        <img class="icon" src="./images/icons/facebook.svg" alt="Facebook">
                     </a>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/icons/whatsapp.svg" alt="whatsapp">
+                        <img class="icon" src="./images/icons/whatsapp.svg" alt="whatsapp">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/icons/youtube.svg" alt="youtube">
+                        <img class="icon" src="./images/icons/youtube.svg" alt="youtube">
                     </a>
                 </li>
             </ul>
         </div>
         <hr />
-        <p class="container">Studi<span>on</span> - Todos os direitos reservados</p>
+        <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
     
 </body>
