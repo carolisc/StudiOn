@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../src/css/depoimentos.css">
     <title>Depoimentos | StudiOn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +42,7 @@
     </nav>
 
     <header>
+
         <img 
             class="header__background" 
             src="./images/headers/header_depoimentos.jpeg" 
@@ -55,105 +57,64 @@
     </header>
 
     <main>
-        <!-- DO CODEPEN -->
 
-        <section class="container carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-              <li id="carousel__slide1"
-                  tabindex="0"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                  <a href="#carousel__slide3"
-                     class="carousel__prev"></a>
+        <section class="container slider">
 
-                    <!-- SALVANDO section DE DEPOIMENTOS -->
+            <!-- SLIDER SWIPER -->
 
-                        <div class="container slider">
-                            <section>
-                                <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
-                                <h4 class="name">
-                                    Alberto Saldanha
-                                </h4>
-                                <small>CEO - vitamusic</small>
-                                <p class="quotes">"</p>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
-                            </section>
+            <div class="swiper">
 
-                        </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-                  <a href="#carousel__slide2"
-                     class="carousel__next"></a>
-              </li>
-              <li id="carousel__slide2"
-                  tabindex="0"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide1"
-                   class="carousel__prev"></a>
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <section class="section">
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Alberto Saldanha
+                        </h4>
+                        <small>CEO - vitamusic</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <section>
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Mariana Bastos
+                        </h4>
+                        <small>Prod de eventos - +Mídia</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                  <div class="swiper-slide">
+                    <section>
+                        <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
+                        <h4 class="name">
+                            Guilherme Silva
+                        </h4>
+                        <small>Gerente de Marketing - comusic</small>
+                        <p class="quotes">"</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+                    </section>
+                  </div>
+        
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+                <script src="./index.js"></script>
+        
+              </div>
 
-                    <!-- SALVANDO section DE DEPOIMENTOS -->
-
-                    <div class="container slider">
-                        <section>
-                            <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
-                            <h4 class="name">
-                                Mariana Bastos
-                            </h4>
-                            <small>Prod de eventos - +Mídia</small>
-                            <p class="quotes">"</p>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
-                        </section>
-
-                    </div>
-
-                <a href="#carousel__slide3"
-                   class="carousel__next"></a>
-              </li>
-              <li id="carousel__slide3"
-                  tabindex="0"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide2"
-                   class="carousel__prev"></a>
-
-                    <!-- SALVANDO section DE DEPOIMENTOS -->
-
-                    <div class="container slider">
-                        <section>
-                            <img class="user-image" src="./images/alberto.jpeg" alt="Alberto">
-                            <h4 class="name">
-                                Guilherme Silva
-                            </h4>
-                            <small>Gerente de Marketing - comusic</small>
-                            <p class="quotes">"</p>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
-                        </section>
-
-                    </div>
-
-                <a href="#carousel__slide1"
-                   class="carousel__next"></a>
-              </li>
-            </ol>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide1"
-                     class="carousel__navigation-button"></a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide2"
-                     class="carousel__navigation-button"></a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide3"
-                     class="carousel__navigation-button"></a>
-                </li>
-              </ol>
-            </aside>
+            <!-- fim slider swiper -->
+            
           </section>
-
-          <!-- ACABOU DO CODEPEN -->
        
     </main>
 
@@ -194,6 +155,9 @@
         <hr />
         <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./depoimentos.js"></script>
     
 </body>
 </html>

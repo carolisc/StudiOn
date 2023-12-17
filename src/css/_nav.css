@@ -7,6 +7,7 @@
     position: absolute;
     left: 50%; /* o elemento começa em 50% da página */
     transform: translateX(-50%); /* ele volta 50% do espaço, ou seja, centraliza */
+    z-index: 2;
 }
 
 .nav a {
