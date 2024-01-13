@@ -1,11 +1,12 @@
 
 .section1 {
-    width: 100%;
-    height: 71.5rem;
+    /* width: 100%;
+    height: 71.5rem; */
     padding-top: 6rem;
     display: flex; /*grid  testar colunas pra ver o que fica bom usando inspect do browser*/
     /*grid-template-columns: 2fr 3fr;*/
     justify-content: space-between;
+    align-items: center;
 }
 
 .section1 .text { /* position: absolute --> não importa as coisas ao redor, ele vai ficar onde mandei ficar com top e left, tendo position relative no elemento pai */

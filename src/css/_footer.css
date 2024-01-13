@@ -16,9 +16,6 @@
 }
 
 .footer__container h2 {
-    width: 100%;
-    max-width: 45rem;
-    display: flex;
     font-size: 4rem;
     text-align: right;
 }

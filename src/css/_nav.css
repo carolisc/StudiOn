@@ -30,7 +30,7 @@
     display: block;
     margin-top: -0.5rem;
     color: var(--text-primary);
-    font-size: 0.4em; /* usa em pra relacionar com o elemento pai, pra relacionar com o logo, 40% */
+    font-size: 0.4em; /* usa "em" pra relacionar com o elemento pai, pra relacionar com o logo, 40% */
     font-style: normal;
     font-weight: 500;
 }
@@ -64,7 +64,7 @@ a:hover {
     /*grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));  minimo espaçamento 100pixels, maximo 1fr, é tipo flex wrap que bota pra continuar embaixo */
 }
 
-.desktop a {
+.desktop a, .mobile a {
     color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 500px;
